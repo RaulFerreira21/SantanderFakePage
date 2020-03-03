@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    padding: 5px 45px;
+}
+hr{
+    margin: 20px 42px;
+    border: 1px solid lightgray;
+}
+footer{
+    text-align: center;
+    color: rgb(128, 128, 128);
+    margin: 20px 0;
+}
+#banner{
+    background: url(https://cms.santander.com.br/sites/WPS/imagem/imagem-conta-digital-desktop/19-10-29_165044_P_imagemdesktop.jpg) top center no-repeat;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+}
+#banner::before{
+    content: "";
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.521);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#banner h1{
+    color: white;
+    font-size: 34px;
+    width: 320px;
+    padding: 18px 45px;
+    position: relative;
+
+}
+#banner p{
+    color: white;
+    font-size: 20px ;
+    margin: 20px 0;
+    padding: 0 45px;
+    position: relative;
+}
+.transparent{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    opacity: 0.6;
+}
+section{
+    margin: 10px 40px;
+}
+#bannerFix{
+    margin: 10px 0px !important;
+}
+button{
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    background-color: #cb0000;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 18px 45px;
+    font-size: 17px;
+    
+}
+
+button:last-child{
+    width: 27%;
+
+}
+
+.buttons{
+    text-align: center
+}
+#inform{
+    display:flex;
+    flex-direction:row ;
+    margin: 20px 40px;
+}
+
+#textmoneals{
+    display:flex;
+    flex-direction:row ;
+}
+
+.inform-set{
+    display:flex;
+    width: 33%;
+    margin: 15px;
+
+}
+.inform-set p {
+    word-break: break-word;
+    margin-left: 10px;
+}
+
+.circle{
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #cb0000;
+    width: 20%;
+    height: 50%;
+
+}
+.contents{
+    width: 33%;
+    margin: 10px;
+
+}
+
+.contents img{
+    width: 90%;
+}
+.contents p {
+    margin: 10px 0px;
+    color: rgba(126, 126, 126, 0.925);
+}
+
+#textbox{
+    padding: 18px 45px;
+    border: 1px solid rgb(172, 172, 172);
+    color: lightgrey
+}
+
+#imageText{
+    display:flex;
+    align-items: center;
+}
+#imageText img{
+    margin-right: 10px;
+}
+h4:last-of-type{
+    font-size: x-large;
+
+}
+.online p{
+    color: rgb(107, 107, 107);
+    padding: 0 70px;
+    
+}
+
+
+
+
+
+
+@media (max-width: 500px) 
+{
+  #banner
+   {
+    height: 350px;
+   }
+   #inform{
+       flex-direction: column;
+
+   }
+   .inform-set{
+       width: 100%;
+   }
+   section{
+       margin: 10px 10px;
+   }
+   .buttons{
+       width: 75%;
+   }
+   button:last-child{
+    width: 80%;
+    margin: 0 90px;
+    }
+    #textmoneals{
+        flex-direction: column;
+    }
+    .contents{
+        width: 100%;
+    }
+    #imageText img{
+        width: auto;
+    }
+}
